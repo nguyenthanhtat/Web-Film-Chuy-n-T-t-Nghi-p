@@ -1,0 +1,53 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "https://docs.google.com/spreadsheets/d/1BBv4CXNniNjqdIE7tjrG9UM4nprd3NSVy2FX9oaWq0Q/edit#gid=0",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "client": "cd frontend && npm run start",
+    "dev": "nodemon backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcrypt": "^5.0.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.1",
+    "cloudinary": "^1.28.1",
+    "cloudinary-core": "^2.12.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.2.1",
+    "express-session": "^1.17.3",
+    "google-auth-library": "^7.11.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.5",
+    "node-fetch": "^2.6.7",
+    "nodemailer": "^6.7.2",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "react-facebook-login": "^4.1.1",
+    "react-helmet": "^6.1.0",
+    "serve": "^13.0.2",
+    "stripe": "^8.195.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Squirrel1610/Movie-Netflix-TTN-FullStack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Squirrel1610/Movie-Netflix-TTN-FullStack/issues"
+  },
+  "homepage": "https://github.com/Squirrel1610/Movie-Netflix-TTN-FullStack#readme"
+}
